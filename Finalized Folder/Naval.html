@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   body {
+    font-family: "Lato", sans-serif;
+   }
+   /* Fixed sidenav, full height */
+   .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cc9900;
+    overflow-x: hidden;
+    padding-top: 20px;
+   }
+   /* Style the sidenav links and the dropdown button */
+   .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f2f2f2;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+   }
+   /* On mouse-over */
+   .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+   }
+   /* Main content */
+   .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+   }
+   /* Add an active class to the active dropdown button */
+   .active {
+    background-color: #997300;
+    color: white;
+   }
+   /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+   .dropdown-container {
+    display: none;
+    background-color: #b38600;
+    padding-left: 8px;
+   }
+   /* Optional: Style the caret down icon */
+   .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+   }
+   /* Some media queries for responsiveness */
+   @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+   }
+   
+   #Sign:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+   }
+   
+   @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+   }
+   
+   .main {
+    animation: fadein 2s;
+   }
+   
+   #active {
+    background-color: #997300;
+   }
+   
+   body {
+    background: url(Naval.jpg);
+    background-size: 120%;
+    color:  #00cccc;
+    margin-left: 250px;
+   }
+   
+    .jumbotron {
+    position: relative;
+    top: 50%;
+    transform: translateX(15%)
+   } 
+   
+   #a1 {
+    padding-left: 207px;
+   }
+   
+   #a2{
+    padding-left: 207px;
+   }
+  
+   #a3{
+    padding-left:207px;
+   }
+   
+   #a4{
+    padding-left:207px;
+   }
+   
+   #a5{
+    padding-left:207px;
+   }
+   
+   #a6{
+    padding-left:207px;
+   }
+
+<!-- Container element -->
+  </style>
+ </head>
+ <body> 
+   <!-- Jumbotron -->
+   <div class="jumbotron">
+
+
+            <div class="container text-center">
+                <h1>Mid-War: Major Naval Battles</h1>
+    <h4> Pearl Harbor </h4>
+    <p> </h4>
+    <p> On December 7th, 1941; Pearl Harbor was attacked by the Imperial Japanese Navy Air Service  
+    <br> In the Battle thousands of sailors were either injured or killed along with many of the American Navy
+    <br> ships destroyed. This event prompted the United States to declare war on the Axis and on Japan.
+    </p>
+            </div>
+        </div>
+  <img src="PearlHarbor.jpg" id="a1" class="img-responsive" alt="" style="width:400px;height:350px;">
+  <div class="jumbotron">
+            <div class="container text-center">
+                <h4>American Advantages</h4>
+                <p>America Begins The Battle with Doolittle Raid aka The Tokyo Raid. At April 18, 1942, was a air raid by the U.S.A
+  <br>on Tokyo and on the islands of Honshu. The Americans soon realized that they had the advantage
+  <br>of mainland vulnerability against American air raids. Resulting in a boost of American morale.
+  </p>
+            </div>
+        </div> 
+  <img src="doolittle.jpg" id="a2" class="img-responsive" alt="" style="width:325px;height:225px;">
+  <div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Battle of Midway</h4>
+                <p> The Battle Of Midway occured 6 months after Pearl Harbor with a American Victory against the Japanese 
+  <br>allowing America and its allies to move into a offensive position in the Pacific Campaign.
+  <br>The Guadalcanal Campaign took place from November 12th to November 15th of 1942 resulting
+  <br>into a American Strategic and decisive victory.
+  </p>
+            </div>
+        </div> 
+  <img src="midway.jpg" id="a3" class="img-responsive" alt="" style="width:325px;height:200px;">
+  <div class="jumbotron">
+            <div class="container text-center">
+                <h4>Battle of Philippine Sea   </h4>
+                <p>The Battle of Philippine Sea was a extreme naval battle eliminating the Imperial Japanese Navy's 
+  <br>ability to conduct large-scale carrier actions happening in the invasion of the mariana Islands limiting the Japanese.
+  </p>
+            </div>
+        </div> 
+  <img src="Phillippine.jpg" id="a4" class="img-responsive" alt="" style="width:650px;height:478px;">
+  <div class="jumbotron">
+            <div class="container text-center">
+                <h4>Battle Of Iwo Jima: Naval Aspect</h4>
+                <p>The Battle of Iwo Jima began in February 1945 with the need of a base near the 
+  <br>Japanese coast. After many bombings from both air and naval leading to marine divisions to board the 
+  <br>island having difficulty pushing through the 23,000 Japanese Troops and after the battle it was 
+  <br>a American victory.
+            </div>
+        </div>
+
+	<img src="iwojima.jpg" id="a4" class="img-responsive">
+  <!-- Navbar -->
+  <div class="sidenav">
+   <a href="index.html">Home Page</a>
+   <a href="PREWARFINAL.html">Pre-War</a>
+   <button class="dropdown-btn" id="active">Mid-War 
+    <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-container">
+    <a href="GeneralInfo.html">General Info</a>
+    <a href="LandBattles.html">Ground</a>
+    <a href="Naval.html" id="active">Navy</a>
+   </div>
+   <a href="PostWar.html">Post-War</a>
+   <a href="Quiz.html">Quiz</a>
+   <a href="RealAboutPage.html">About Us</a>
+   <style>
+</style>
+<!-- Container element -->
+
+  </div>
+  
+  <script>
+   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+   var dropdown = document.getElementsByClassName("dropdown-btn");
+   var i;
+   for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var dropdownContent = this.nextElementSibling;
+     if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+     } else {
+      dropdownContent.style.display = "block";
+     }
+    });
+   }
+  </script>
+</body>
+</html>

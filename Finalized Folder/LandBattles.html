@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				font-family: "Lato", sans-serif;
+			}
+
+			/* Fixed sidenav, full height */
+			.sidenav {
+				height: 100%;
+				width: 200px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #cc9900;
+				overflow-x: hidden;
+				padding-top: 20px;
+			}
+
+			/* Style the sidenav links and the dropdown button */
+			.sidenav a, .dropdown-btn {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #f2f2f2;
+				display: block;
+				border: none;
+				background: none;
+				width: 100%;
+				text-align: left;
+				cursor: pointer;
+				outline: none;
+			}
+
+			/* On mouse-over */
+			.sidenav a:hover, .dropdown-btn:hover {
+				color: #f1f1f1;
+			}
+
+			/* Main content */
+			.main {
+				margin-left: 200px; /* Same as the width of the sidenav */
+				font-size: 20px; /* Increased text to enable scrolling */
+				padding: 0px 10px;
+			}
+
+			/* Add an active class to the active dropdown button */
+			.active {
+				background-color: #997300;
+				color: white;
+			}
+
+			/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+			.dropdown-container {
+				display: none;
+				background-color: #b38600;
+				padding-left: 8px;
+			}
+
+			/* Optional: Style the caret down icon */
+			.fa-caret-down {
+				float: right;
+				padding-right: 8px;
+			}
+
+			/* Some media queries for responsiveness */
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+			
+			#Sign:hover {
+				transform: rotate(360deg);
+				transition: 2s;
+			}
+			
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			
+			.main {
+				animation: fadein 2s;
+			}
+			
+			#active {
+				background-color: #997300;
+			}
+			
+			body {
+				background: url(GroundBackground2.jpg);
+				background-size: 130%;
+				color:  #00cccc;
+			}
+			
+			 .jumbotron {
+				position: relative;
+				top: 50%;
+				transform: translateX(15%)
+			} 
+			
+			#g1 {
+				padding-left: 207px;
+			}
+			
+			#g2{
+				padding-left: 207px;
+			}
+		
+			#g3{
+				padding-left:207px;
+			}
+			
+			#g4{
+				padding-left:207px;
+			}
+			
+			#g5{
+				padding-left:207px;
+			}
+			
+			#g6{
+				padding-left:207px;
+			}
+<!-- Container element -->
+<div class="parallax"></div>
+		</style>
+	</head>
+	<body>
+		
+			<!-- Jumbotron -->
+			<div class="jumbotron">
+            <div class="container text-center">
+                <h1>Wartime: Land Battles</h1>
+                <p>4 Important Land Battles that turned the tide of the war.</p>
+				<h4>The Battle of Moscow</h4>
+				<p>The Battle of Moscow began in the Soviet Union in 1941. This battle was to decide whether the Soviets were to collapse under the weight<br>
+				of Germany. Germany has 2 million to the Soviets 1.5 million and the Soviets, knowing the terrain and having the weather on their size, win the battle.</p>
+            </div>
+        </div>
+		<img src="Moscow.jpg" id="g1" class="img-responsive" alt="Ground1" style="width:366px;height:311px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Battle of Stalingrad</h4>
+                <p>Germany was advancing almost unopposed into Southern Russia. Stalingrad was a city that was the most fought for. It suffered more civilian and military<br>
+				death than the allied casualties combined. This is over 2.5 Million dead. After this battle, the tide turned in favor of the Allies and Soviets.</p>
+            </div>
+        </div> 
+		<img src="stalingrad.jpg" id="g2" class="img-responsive" alt="Ground2" style="width:650px;height:467px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Battle of The Bulge</h4>
+                <p>Hitler had a plan to halt the Allied offensive into Germany in 1944 with a surprise blitzkrieg. Germany, with the resources it had, could only keep <br>
+				it up for only a few days! They also lost over 20,000 men in those few days. After that offensive they lost so much equipment that the defense was even <br>
+				harder for them! A blunder on Hitlers part. One that cost him any chance of successful defense of Germany.</p>
+            </div>
+        </div> 
+		<img src="Bulge.jpg" id="g3" class="img-responsive" alt="Ground3" style="width:650px;height:365px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Battle of Berlin</h4>
+                <p>Berlin was invaded by the Soviets. Though Germany was outnumbered 5 to 1, it was a very hard fought battle. Hitler's forces fought for every inch of<br>
+				that city. But in the end they could not hold against the might that was the Soviet Union. When they found Hitler's bunker, they discovered that Hitler commited<br>
+				suicide. The report of his suicide prompted the forces of Berlin and of Germany to surrender, ending the war in Europe.</p>
+            </div>
+        </div> 
+		<img src="berlin.jpg" id="g4" class="img-responsive" alt="Ground4" style="width:750px;height:578px;">
+		<!-- Navbar -->
+		<div class="sidenav">
+			<a href="index.html">Home Page</a>
+			<a href="PREWARFINAL.html">Pre-War</a>
+			<button class="dropdown-btn" id="active">Mid-War 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="GeneralInfo.html">General Info</a>
+				<a href="LandBattles.html"id="active">Ground</a>
+				<a href="Naval.html">Navy</a>
+			</div>
+			<a href="PostWar.html">Post-War</a>
+			<a href="Quiz.html">Quiz</a>
+			<a href="#contact">About Us</a>
+			<style>
+
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+		</div>
+		
+		<script>
+			/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+				dropdown[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var dropdownContent = this.nextElementSibling;
+					if (dropdownContent.style.display === "block") {
+						dropdownContent.style.display = "none";
+					} else {
+						dropdownContent.style.display = "block";
+					}
+				});
+			}
+		</script>
+</body>
+</html> 

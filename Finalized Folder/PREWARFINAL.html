@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				font-family: "Lato", sans-serif;
+			}
+
+			/* Fixed sidenav, full height */
+			.sidenav {
+				height: 100%;
+				width: 200px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #cc9900;
+				overflow-x: hidden;
+				padding-top: 20px;
+			}
+
+			/* Style the sidenav links and the dropdown button */
+			.sidenav a, .dropdown-btn {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #f2f2f2;
+				display: block;
+				border: none;
+				background: none;
+				width: 100%;
+				text-align: left;
+				cursor: pointer;
+				outline: none;
+			}
+
+			/* On mouse-over */
+			.sidenav a:hover, .dropdown-btn:hover {
+				color: #f1f1f1;
+			}
+
+			/* Main content */
+			.main {
+				margin-left: 200px; /* Same as the width of the sidenav */
+				font-size: 20px; /* Increased text to enable scrolling */
+				padding: 0px 10px;
+			}
+
+			/* Add an active class to the active dropdown button */
+			.active {
+				background-color: #997300;
+				color: white;
+			}
+
+			/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+			.dropdown-container {
+				display: none;
+				background-color: #b38600;
+				padding-left: 8px;
+			}
+
+			/* Optional: Style the caret down icon */
+			.fa-caret-down {
+				float: right;
+				padding-right: 8px;
+			}
+
+			/* Some media queries for responsiveness */
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+			
+			#Sign:hover {
+				transform: rotate(360deg);
+				transition: 2s;
+			}
+			
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			
+			.main {
+				animation: fadein 2s;
+			}
+			
+			#active {
+				background-color: #997300;
+			}
+			
+			body {
+				background: url(PreWarBackgroundNew.jpg);
+				background-size: 120%;
+			}
+			
+			 .jumbotron {
+				position: relative;
+				top: 50%;
+				transform: translateX(15%)
+			} 
+			
+			#img1 {
+				padding-left: 207px;
+			}
+			
+			#img2{
+				padding-left: 207px;
+			}
+		
+			#img3{
+				padding-left:207px;
+			}
+			
+			#img4{
+				padding-left:207px;
+			}
+			
+			#img5{
+				padding-left:207px;
+			}
+			
+			#img6{
+				padding-left:207px;
+			}
+<!-- Container element -->
+<div class="parallax"></div>
+		</style>
+	</head>
+	<body>
+		
+			<!-- Jumbotron -->
+			<div class="jumbotron">
+            <div class="container text-center">
+                <h1>Pre-war: The Powderkeg of Europe</h1>
+                <p>The Rise of Fascism and Militarism.</p>
+				<h4> The Humiliation of Versailles</h4>
+				<p> In 1919 Treaty of Versailles is signed. Germany suffers economic, military and territorial <br>
+				consequence. Some of which is major territorial loss to France and Poland coupled <br>with the huge
+				amount of war reparations put on them. The amount of reparations is impossible to pay, especially 
+				with a recovering economy.<br> Soon after the war German economy collapses into further debt while 
+				the Allies occupy the Ruhr, a rich region in Germany <br>and without the Ruhr Germany falls even 
+				further into debt! Germany at this point is in the worst economic disaster they could imagine. <br>
+				Over 6 million are on the streets and they are all hopeless!</p>
+					
+				
+            </div>
+        </div>
+		<img src="PostWW1GermanyLosses.png" id="img1" class="img-responsive" alt="PreWarImage1" style="width:366px;height:311px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Rise of Fascism</h4>
+                <p>Italy was also under hard times. Though they did not retain democracy as they were taken over by Benito Mussolini and his Fascist party.
+				<br> Mussolini promises to bring back the greatness of the Roman Empire. Italy and other nations used a sense of nationalism to further their<br> 
+				efforts and ambitions. Going back to Germany, in 1933 Germany was in political turmoil with Communists on one side and Hitlers Fascists on the other<br>
+				and in a landslide victory, Hitler wins the chancellor elections.</p>
+            </div>
+        </div> 
+		<img src="hitler-and-mussolini-in-car.jpg" id="img2" class="img-responsive" alt="PreWarImage2" style="width:650px;height:467px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>Hitler Seizes Absolute Power</h4>
+                <p>Not very long after Hitler is elected Chancellor, the President of Germany Hindenburg dies and Hitler uses his immense power in German Parliament<br>
+				to merge the position of President and Chancellor into one leadership role, "Der Fuhrer" or The Leader in German is the name of this role. Hitler also<br>
+				uses his power to blame a terrorist attack on the government building on the Communist party of Germany, the KPD or Roterfront(Red Front in German)<br>
+				He uses this as an excuse to ban all other parties except the Nazi party and to suspend elections indefinetly. Hitlers absolute rule has begun.</p>
+            </div>
+        </div> 
+		<img src="HitlerSeizesAbsolutePower.jpeg" id="img3" class="img-responsive" alt="PreWarImage3" style="width:650px;height:365px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>German Rearmament and Expansion</h4>
+                <p>Soon after Hitler seizes absolute power, he orders the massive rearmament of the German army, navy and airforce. This rearmament goes against the <br>
+				Treaty of Versailles but Britain and France do not to anything about it. Hitler also puts the military back into the Rhineland. The Allies are alarmed <br>
+				and make an alliance but do not do anything. Then Germany annexes Austria and the Allies to not contest. They soon take the Sudetenland of Czechslovakia <br>
+				and a war almost happens this time as the Allies final put their foot down. They have Hitler promise not to invade any more countries or there will be war. <br>
+				Hitler promises, but breaks his promise shortly after and invades the rest of Czechoslovakia and takes it over. The Allies still did nothing.</p>
+            </div>
+        </div> 
+		<img src="GermanMarch.jpg" id="img4" class="img-responsive" alt="PreWarImage4" style="width:750px;height:578px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>War in The East</h4>
+                <p>In Asia, The Empire of Japan invades the whole of China. With China splintering into warring factions and communists, Japan starts the war with<br>
+				relative success. Though later on in the war, the offense slows down as they reach heavy defenses and mountainous terrain.</p>
+            </div>
+        </div> 
+		<img src="Japan.jpg" id="img5" class="img-responsive" alt="PreWarImage5">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The War Begins</h4>
+                <p>Germany, with its superior military begins making plans to invade Poland and defend from the Allies until they can properly attack them. Firstly<br>
+				they sign a Non-Aggression pact with the Soviet Union that includes a plan to split Poland. The planning phases complete before September. Germany <br>
+				demands the lands lost during the Second World War from Poland. Poland refuses and the Allies say if the Germans attack, they will declare war on them.<br>
+				The Germans do not listen and invade Poland anyways. The Second World War has begun.</p>
+            </div>
+        </div> 
+		<img src="InvasionOfPoland.jpg" id="img6" class="img-responsive" alt="PreWarImage6">
+		<!-- Navbar -->
+		<div class="sidenav">
+			<a href="index.html">Home Page</a>
+			<a href="PREWARFINAL.html" id="active">Pre-War</a>
+			<button class="dropdown-btn">Mid-War 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="GeneralInfo.html">General Info</a>
+				<a href="LandBattles.html">Ground</a>
+				<a href="Naval.html">Navy</a>
+			</div>
+			<a href="PostWar.html">Post-War</a>
+			<a href="Quiz.html">Quiz</a>
+			<a href="RealAboutPage.html">About Us</a>
+			<style>
+
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+		</div>
+		
+		<script>
+			/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+				dropdown[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var dropdownContent = this.nextElementSibling;
+					if (dropdownContent.style.display === "block") {
+						dropdownContent.style.display = "none";
+					} else {
+						dropdownContent.style.display = "block";
+					}
+				});
+			}
+		</script>
+</body>
+</html> 

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				font-family: "Lato", sans-serif;
+			}
+
+			/* Fixed sidenav, full height */
+			.sidenav {
+				height: 100%;
+				width: 200px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #cc9900;
+				overflow-x: hidden;
+				padding-top: 20px;
+			}
+
+			/* Style the sidenav links and the dropdown button */
+			.sidenav a, .dropdown-btn {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #f2f2f2;
+				display: block;
+				border: none;
+				background: none;
+				width: 100%;
+				text-align: left;
+				cursor: pointer;
+				outline: none;
+			}
+
+			/* On mouse-over */
+			.sidenav a:hover, .dropdown-btn:hover {
+				color: #f1f1f1;
+			}
+
+			/* Main content */
+			.main {
+				margin-left: 200px; /* Same as the width of the sidenav */
+				font-size: 20px; /* Increased text to enable scrolling */
+				padding: 0px 10px;
+			}
+
+			/* Add an active class to the active dropdown button */
+			.active {
+				background-color: #997300;
+				color: white;
+			}
+
+			/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+			.dropdown-container {
+				display: none;
+				background-color: #b38600;
+				padding-left: 8px;
+			}
+
+			/* Optional: Style the caret down icon */
+			.fa-caret-down {
+				float: right;
+				padding-right: 8px;
+			}
+
+			/* Some media queries for responsiveness */
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+			
+			#Sign:hover {
+				transform: rotate(360deg);
+				transition: 2s;
+			}
+			
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			
+			.main {
+				animation: fadein 2s;
+			}
+			
+			#active {
+				background-color: #997300;
+			}
+			
+			body {
+				background: url(WartimeBackground.jpg);
+				background-size: 120%;
+			}
+			
+			 .jumbotron {
+				position: relative;
+				top: 50%;
+				transform: translateX(15%)
+			} 
+			
+			#gen1 {
+				padding-left: 207px;
+			}
+			
+			#gen2{
+				padding-left: 207px;
+			}
+		
+			#gen3{
+				padding-left:207px;
+			}
+			
+			#gen4{
+				padding-left:207px;
+			}
+			
+			#gen5{
+				padding-left:207px;
+			}
+			
+			#gen6{
+				padding-left:207px;
+			}
+<!-- Container element -->
+<div class="parallax"></div>
+		</style>
+	</head>
+	<body>
+		
+			<!-- Jumbotron -->
+			<div class="jumbotron">
+            <div class="container text-center">
+                <h1>Wartime</h1>
+				<p>The Axis's Rise and Downfall
+				<h4> The Beginning</h4>
+				<p>Germany and the Soviets quickly advanced into Poland. Poland quickly surrendered only months afterwards. German occupation of Poland was harsh, even questionable<br>
+				today as being humane. The Soviets were almost the same. It even seemed to the Western World that they were allies. Though the Soviets did not think the same way. The<br>
+				Sovies began secretely arming its nation for the oncoming war they knew would eventually happen. They used the blitzkrieg tactic to plow quickly into Poland taking most<br>
+				of Poland even though the Soviets declared war on them first.</p>
+            </div>
+        </div>
+		<img src="Poland.png" id="gen1" class="img-responsive" alt="PreWarImage1" style="width:366px;height:311px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The Phony War and German Dominance</h4>
+                <p>A period of 4-5 months known as the phony war occurred where little to no military activity occurred. This was merely Germany getting ready for an invasion into France.<br>
+				All of a sudden, using blitzkrieg, Germany plowed through Belgium into France quickly making them surrender within months! Britain was forced back onto their island and to<br>
+				defend for their lives on their own. Soon enough, Germany attacks the Soviets, just as they had expected but did not expect them to attack so soon. They took over most of <br>
+				urban Russia in just a few months. It seemed to be the end of the Allies, but then the United States had joined the war because Japan attacked them. There was a glimmer of hope.</p>
+            </div>
+        </div> 
+		<img src="Paris.jpg" id="gen2" class="img-responsive" alt="PreWarImage2" style="width:650px;height:467px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>German Losses</h4>
+                <p>Germany began losing in the Soviet Union when the Winter came. Especially at Stalingrad where over 500,000 Germans had died. The Germans made even more losses when D-day and<br>
+				the Allied invasion of Italy happened which stretched out their resources. Soon enough Germany was being pushed on two fronts, with no where to go.</p>
+            </div>
+        </div> 
+		<img src="parislib.jpg" id="gen3" class="img-responsive" alt="PreWarImage3" style="width:650px;height:365px;">
+		<div class="jumbotron">
+            <div class="container text-center">
+                <h4>The End of Germany</h4>
+                <p>Germany had lost too much. They had gone through 6 years of war and they were being starved of resources. Soon enough Germany has fallen to the Soviets an the Allies. Freedom<br>
+				had won. Japan in the east had remained in the war. An invasion of their mainland was too costly, as proved by invasions of just small islands, where the Japanese would fight to<br>
+				the last man! But the atom bomb has been built. They used it instead. On Hiroshima the Little Boy and on Nagasaki, the Fat Man. Japan had soon surrendered as well. The war was won.<br>
+				The peoples of Europe had been freed. But at what cost? The Allies and the Soviets agreed this should never be allowed to happen again. </p>
+            </div>
+        </div> 
+		<img src="bomb.jpg" id="gen4" class="img-responsive" alt="PreWarImage4" style="width:750px;height:578px;">
+		<!-- Navbar -->
+		<div class="sidenav">
+			<a href="index.html">Home Page</a>
+			<a href="PREWARFINAL.html">Pre-War</a>
+			<button class="dropdown-btn">Mid-War 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="GeneralInfo.html"id="active">General Info</a>
+				<a href="LandBattles.html">Ground</a>
+				<a href="Naval.html">Navy</a>
+			</div>
+			<a href="PostWar.html">Post-War</a>
+			<a href="Quiz.html">Quiz</a>
+			<a href="#contact">About Us</a>
+			<style>
+
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+		</div>
+		
+		<script>
+			/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+				dropdown[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var dropdownContent = this.nextElementSibling;
+					if (dropdownContent.style.display === "block") {
+						dropdownContent.style.display = "none";
+					} else {
+						dropdownContent.style.display = "block";
+					}
+				});
+			}
+		</script>
+</body>
+</html> 
